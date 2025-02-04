@@ -1034,10 +1034,11 @@ video.is-playing+.play-button {
     outline: none;
     background-color: transparent;
     color: var(--white-color);
-    min-height:54px;
+    min-height: 54px;
 }
 
-input::placeholder, textarea::placeholder {
+input::placeholder,
+textarea::placeholder {
     color: #fff;
     font-size: 16px;
 }
@@ -1364,12 +1365,7 @@ textarea {
         gap: 50px;
     }
 
-    .choosing_right {
-        img {
-            max-width: 100%;
-        }
-    }
-
+    
     .work_card {
         max-width: calc(33.33% - 23px);
         width: 100%;
@@ -1591,6 +1587,9 @@ textarea {
         margin-bottom: 30px;
         overflow: auto;
         padding-bottom: 30px;
+        text-align: left;
+        justify-content: flex-start;
+        padding-left: 10px;
     }
 
     .work_card {
@@ -1690,7 +1689,8 @@ textarea {
     }
 
     .controls button {
-        font-size: 40px;
+        font-size:35px;
+        padding-inline: 10px;
     }
 
     .dots .dot {
@@ -1701,21 +1701,58 @@ textarea {
     .logo img {
         max-width: 80px;
     }
+
     .services_card.design_box {
         .services_card_text {
             padding: 20px 0px;
         }
     }
 }
-@media(max-width:575px){
+
+@media(max-width:575px) {
     .banner_content {
         left: 40px;
     }
+
     .slider_wrapper {
         .slider-content {
             padding: 26px 10px 26px;
             text-align: left;
         }
     }
-    
+
+    .two_img_animated,
+    .three_img_animated {
+        display: none;
+    }
+
+    .testimonial_section {
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+
+        h2 {
+            margin-bottom: 40px;
+        }
+
+        .container {
+            position: relative;
+            padding-bottom: 70px;
+        }
+
+        .custom-arrow {
+            width: 45px;
+            height: 45px;
+            bottom: -30px;
+        }
+
+        .custom-arrow.slick-prev {
+            left:35%;
+        }
+
+        .custom-arrow.slick-next {
+            right:35%;
+        }
+    }
+
 }
