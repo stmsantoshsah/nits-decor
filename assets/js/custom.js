@@ -1,7 +1,17 @@
 function toggleMenu() {
   const menu = document.querySelector('.menu');
-  menu.classList.toggle('active');
+  const body = document.body;
+  const hamburger = document.querySelector('.hamburger');
+   menu.classList.toggle('active');
+  hamburger.classList.toggle('active');
+  if (menu.classList.contains('active')) {
+    body.classList.add('menu-open');
+  } else {
+    body.classList.remove('menu-open');
+  }
 }
+
+
 // Banner slider
 const slides = document.querySelectorAll('.slide');
 const buttons = document.querySelectorAll('.controls button');
