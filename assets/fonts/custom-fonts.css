@@ -1,0 +1,18 @@
+@font-face {
+    font-family: 'Bentoga';
+    src: url('BentogaItalic-Thin.woff2') format('woff2'),
+        url('BentogaItalic-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bentoga';
+    src: url('Bentoga-Thin.woff2') format('woff2'),
+        url('Bentoga-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
